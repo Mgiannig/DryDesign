@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-family: serif;
+    font-weight: 700;
+    font-size: 75px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: 400;
+}
+p {
+    line-height: 1.75;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+/* == HEADER == */
+
+header {
+    background: #55D8BB;
+    font-weight: 800;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+.container-header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav { 
+    float: right;
+    margin: 5px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color:#444;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+
+nav a:hover::before {
+    width: 100%;
+  }
+
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.start { 
+    background-color:  rgb(41, 62, 70);
+    color:white;
+}
+
+.middle {
+    background-color: rgb(154, 199, 195);
+}
+
+.jsBox {
+
+background-color: rgb(146, 146, 112);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    transition: all ease-in-out 250ms;
+}
+
+.btn-normal {
+    background: rgb(36, 149, 146);
+}
+
+.btn-normal:hover {
+    background: rgb(36, 128, 125);
+}
+
+.btn-ghost{
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-ghost:hover{
+
+    visibility: hidden;
+    transition: all ease-in-out 1ms;
+    
+}
+
+.btn-awesome {
+background: rgb(200, 149, 146);
+box-shadow: 0px 2px 4px -2px rgba(0,0,0,.75);
+color:white;
+
+
+}
+
+.btn-awesome:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 18px 8px -10px rgba(0,0,0,.75);   
+
+}
+
